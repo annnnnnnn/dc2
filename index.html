@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BROADWAY | Restauracja & Klub</title>
+    <meta name="description"
+        content="Elegancka restauracja w stylu Broadway. Wykwintna kuchnia, niepowtarzalny klimat.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/appetizer.png">
+    <script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img src="images/logo_restauracja.png" alt="BROADWAY"></a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="menu-text">Nawigacja</span>
+                <span class="hamburger">&#9776;</span>
+            </div>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Start</a></li>
+                    <li><a href="#about" class="nav-link">O Nas</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                    <li><a href="#reservation" class="btn-reserve">Zarezerwuj Stolik</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                SMAK W ŚWIETLE
+                <span>REFLEKTORÓW</span>
+            </h1>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #ddd;">
+                Poczuj magię Broadwayu na talerzu.
+            </p>
+            <div>
+                <a href="#menu" class="btn-primary">Zobacz Menu</a>
+                <a href="#reservation" class="btn-secondary">Rezerwacja</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="about" class="features fade-on-scroll">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">&#127869;</div> <!-- Fork and Knife -->
+                    <h3>Wykwintna Kuchnia</h3>
+                    <p style="color: #aaa; margin-top: 1rem;">Autorskie menu szefa kuchni inspirowane klasykami kuchni
+                        światowej z nowoczesnym twistem.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#127864;</div> <!-- Cocktail Glass -->
+                    <h3>Magiczne Koktajle</h3>
+                    <p style="color: #aaa; margin-top: 1rem;">Odkryj naszą kartę drinków, gdzie każdy koktajl to osobna
+                        historia opowiedziana smakiem.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#10024;</div> <!-- Sparkles -->
+                    <h3>Unikalny Klimat</h3>
+                    <p style="color: #aaa; margin-top: 1rem;">Wnętrza inspirowane nowojorskimi teatrami, tworzące
+                        niepowtarzalną atmosferę, idealną na romantyczną kolację.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-preview fade-on-scroll">
+        <div class="container">
+            <div class="text-center">
+                <h4 class="section-subtitle">KULINARNY SPEKTAKL</h4>
+                <h2 class="section-title">Gwiazdy Naszego Menu</h2>
+                <p style="max-width: 600px; margin: 0 auto; color: #aaa;">
+                    Starannie wyselekcjonowane składniki, pasja tworzenia i artystyczna prezentacja.
+                </p>
+            </div>
+
+            <div class="menu-layout">
+                <div class="menu-tiles">
+                    <div class="menu-tile"><img src="images/dish/610854514_122201258600324451_3528121255070183806_n.jpg"
+                            alt="Danie 1"></div>
+                    <div class="menu-tile"><img src="images/dish/573123867_17937491505096325_3051910933824762274_n.jpg"
+                            alt="Danie 2"></div>
+                    <div class="menu-tile"><img src="images/dish/577554506_122195313308324451_2225931896685836581_n.jpg"
+                            alt="Danie 3"></div>
+                </div>
+
+                <div class="menu-categories">
+
+                    <!-- Schiacciata -->
+                    <div class="menu-category">
+                        <h3>Schiacciata</h3>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/appetizer.png')">
+                            <div>
+                                <span class="menu-item-name">Truflowa</span>
+                                <span class="badge badge-special">Oferta specjalna</span>
+                                <span class="menu-item-desc">Włoskie pieczywo z serkiem śmietankowym, pastą truflową,
+                                    salami Spinata Piccante, szpinakiem i oliwą</span>
+                            </div>
+                            <span class="menu-item-price">42 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/appetizer.png')">
+                            <div>
+                                <span class="menu-item-name">Mortadela</span>
+                                <span class="menu-item-desc">Włoskie pieczywo z serem burrata, mortadelą z pistacjami,
+                                    suszonymi pomidorami, rukolą, pistacjami i oliwą</span>
+                            </div>
+                            <span class="menu-item-price">39 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/appetizer.png')">
+                            <div>
+                                <span class="menu-item-name">Pesto</span>
+                                <span class="menu-item-desc">Włoskie pieczywo z serem burrata, pesto Genovese,
+                                    grillowaną marynowaną papryką, pieczonymi pomidorkami koktajlowymi i
+                                    szpinakiem</span>
+                            </div>
+                            <span class="menu-item-price">36 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/appetizer.png')">
+                            <div>
+                                <span class="menu-item-name">Chicken</span>
+                                <span class="menu-item-desc">Włoskie pieczywo z oliwą, plastrami kurczaka sous-vide w
+                                    marynacie ziołowej, sałatą lodową, pomidorkami koktajlowymi i sosem
+                                    musztardowo-miodowym</span>
+                            </div>
+                            <span class="menu-item-price">38 zł</span>
+                        </div>
+                    </div>
+
+                    <!-- Sałatki -->
+                    <div class="menu-category">
+                        <h3>Sałatki</h3>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/salad.png')">
+                            <div>
+                                <span class="menu-item-name">Cezar</span>
+                                <span class="menu-item-desc">Sałata rzymska, sos cezar, kurczak sous-vide, pomidorki
+                                    cherry, ser grana padano, bagietka ziołowa</span>
+                            </div>
+                            <span class="menu-item-price">38 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/salad.png')">
+                            <div>
+                                <span class="menu-item-name">Burrata</span>
+                                <span class="menu-item-desc">Włoski ser burrata, podany z rukolą, pesto bazyliowym,
+                                    pomidorkami cherry, dżemem z pomidorów i bagietką ziołową</span>
+                            </div>
+                            <span class="menu-item-price">45 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/salad.png')">
+                            <div>
+                                <span class="menu-item-name">Shrimp</span>
+                                <span class="menu-item-desc">Sałata lodowa, sos cezar, smażone krewetki na maśle z
+                                    czosnkiem, cebulą i pomidorkami cherry, ser grana padano, bagietka ziołowa</span>
+                            </div>
+                            <span class="menu-item-price">49 zł</span>
+                        </div>
+                    </div>
+
+                    <!-- Makarony & Gnocchi -->
+                    <div class="menu-category">
+                        <h3>Gnocchi & Makarony</h3>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/pasta.png')">
+                            <div>
+                                <span class="menu-item-name">Gnocchi Nduja Calabrese</span>
+                                <span class="menu-item-desc">Włoskie kluski ziemniaczane (250g), pikantna Nduja, sos
+                                    pomidorowy, czerwona cebula, czosnek, mascarpone</span>
+                            </div>
+                            <span class="menu-item-price">46 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/pasta.png')">
+                            <div>
+                                <span class="menu-item-name">Gnocchi al Gorgonzola</span>
+                                <span class="badge badge-recommend">Szef kuchni poleca</span>
+                                <span class="menu-item-desc">Włoskie kluski ziemniaczane (250g), śmietanka, gorgonzola,
+                                    smażone kurki, orzechy włoskie</span>
+                            </div>
+                            <span class="menu-item-price">48 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/pasta.png')">
+                            <div>
+                                <span class="menu-item-name">Ravioli d’Oca</span>
+                                <span class="menu-item-desc">Makaron Ravioli z pieczoną gęsiną i grzybami leśnymi w
+                                    sosie śmietanowym, prażona cebulka, bazylia</span>
+                            </div>
+                            <span class="menu-item-price">54 zł</span>
+                        </div>
+                        <div class="menu-item unavailable" onmouseenter="updateMenuImage('images/pasta.png')">
+                            <div>
+                                <span class="menu-item-name">Spaghetti Bolognese</span>
+                                <span class="badge badge-unavailable">Chwilowo niedostępny</span>
+                                <span class="menu-item-desc">Wolno gotowany sos pomidorowy z mięsem wołowym i
+                                    wieprzowym, boczek, warzywa, parmezan</span>
+                            </div>
+                            <span class="menu-item-price">42 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/pasta.png')">
+                            <div>
+                                <span class="menu-item-name">Spaghetti Carbonara</span>
+                                <span class="menu-item-desc">Guanciale, boczek, ser Pecorino Romano, jajko</span>
+                            </div>
+                            <span class="menu-item-price">45 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/pasta.png')">
+                            <div>
+                                <span class="menu-item-name">Tagliatelle al Pomodoro</span>
+                                <span class="menu-item-desc">Czarne tagliatelle z atramentem mątwy, sos
+                                    śmietanowo-pomidorowy, czosnek, cebula, pietruszka, grana padano</span>
+                            </div>
+                            <span class="menu-item-price">39 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/pasta.png')">
+                            <div>
+                                <span class="menu-item-name">Tagliatelle al Pomodoro + Krewetki/Kurczak</span>
+                                <span class="menu-item-desc">Nasze klasyczne czarne tagliatelle z wybranym
+                                    dodatkiem</span>
+                            </div>
+                            <span class="menu-item-price">52 zł / 48 zł</span>
+                        </div>
+                    </div>
+
+                    <!-- Zupy & Przekąski -->
+                    <div class="menu-category">
+                        <h3>Zupy & Przekąski</h3>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/gallery_1.png')">
+                            <div>
+                                <span class="menu-item-name">Krem z Pomidorów</span>
+                                <span class="menu-item-desc">Bazylia, śmietanka, grissini</span>
+                            </div>
+                            <span class="menu-item-price">26 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/gallery_1.png')">
+                            <div>
+                                <span class="menu-item-name">Rosół</span>
+                                <span class="menu-item-desc">Domowy makaron, marchewka, pietruszka</span>
+                            </div>
+                            <span class="menu-item-price">24 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/gallery_1.png')">
+                            <div>
+                                <span class="menu-item-name">Zupa Sezonowa</span>
+                                <span class="menu-item-desc">Krem z gruszki i pietruszki</span>
+                            </div>
+                            <span class="menu-item-price">28 zł</span>
+                        </div>
+                        <div class="menu-item" style="margin-top: 2rem;">
+                            <h4
+                                style="color: var(--color-gold); margin-bottom: 1rem; font-family: var(--font-heading);">
+                                Przekąski</h4>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/appetizer.png')">
+                            <div>
+                                <span class="menu-item-name">Krewetki w mango</span>
+                                <span class="menu-item-desc">6 szt. krewetek, sos mango-chili, kolendra, grzanka
+                                    ziołowa</span>
+                            </div>
+                            <span class="menu-item-price">48 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/appetizer.png')">
+                            <div>
+                                <span class="menu-item-name">Krewetki w panko</span>
+                                <span class="menu-item-desc">6 krewetek w chrupiącej panierce, z sosami i grzanką
+                                    ziołową</span>
+                            </div>
+                            <span class="menu-item-price">46 zł</span>
+                        </div>
+                        <div class="menu-item unavailable" onmouseenter="updateMenuImage('images/appetizer.png')">
+                            <div>
+                                <span class="menu-item-name">Bruschetta</span>
+                                <span class="badge badge-unavailable">Chwilowo niedostępny</span>
+                                <span class="menu-item-desc">3 chrupiące grzanki: pomidorowa / tapenada / ricotta z
+                                    cytryną</span>
+                            </div>
+                            <span class="menu-item-price">29 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/appetizer.png')">
+                            <div>
+                                <span class="menu-item-name">Crostini z Ndują</span>
+                                <span class="menu-item-desc">Bagietka ziołowa, burrata, pikantna Nduja, rukola</span>
+                            </div>
+                            <span class="menu-item-price">34 zł</span>
+                        </div>
+                        <div class="menu-item" onmouseenter="updateMenuImage('images/appetizer.png')">
+                            <div>
+                                <span class="menu-item-name">Bao z krewetką / Wieprzowiną Hoisi</span>
+                                <span class="menu-item-desc">Puszysta bułeczka bao, świeże warzywa, sos</span>
+                            </div>
+                            <span class="menu-item-price">32 zł</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="#" class="btn-primary">Pobierz Pełne Menu (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery fade-on-scroll">
+        <div class="container">
+            <div class="text-center">
+                <h4 class="section-subtitle">WNĘTRZA</h4>
+                <h2 class="section-title">Galeria</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item"><img
+                        src="images/galeria/608413777_17943744540096325_8729641767998154077_n.jpg"
+                        alt="Galeria Broadway 1"></div>
+                <div class="gallery-item"><img
+                        src="images/galeria/608710441_122201258456324451_2485348252567491227_n.jpg"
+                        alt="Galeria Broadway 2"></div>
+                <div class="gallery-item"><img
+                        src="images/galeria/609160477_122201258756324451_2120072452235161999_n.jpg"
+                        alt="Galeria Broadway 3"></div>
+                <div class="gallery-item"><img src="images/galeria/appetizer.png" alt="Galeria Broadway 4"></div>
+                <div class="gallery-item"><img src="images/galeria/pasta.png" alt="Galeria Broadway 5"></div>
+                <div class="gallery-item"><img src="images/galeria/salad.png" alt="Galeria Broadway 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation / Contact Section -->
+    <section id="reservation" class="reservation fade-on-scroll">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h4 class="section-subtitle">ZAPEWNIJ SOBIE MIEJSCE</h4>
+                <h2 class="section-title">Rezerwacja Stolika</h2>
+            </div>
+            <div class="form-box">
+                <iframe
+                    data-tally-src="https://tally.so/embed/A725Ky?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                    loading="lazy" width="100%" height="762" frameborder="0" marginheight="0" marginwidth="0"
+                    title="Rezerwacje- Restauracja Broadway"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 4rem;">
+                <h4 class="section-subtitle">SKONTAKTUJ SIĘ Z NAMI</h4>
+                <h2 class="section-title">Znajdź Nas</h2>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Address -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>ul. Chopina 34<br>83-000 Pruszcz Gdański</p>
+                    <a href="https://maps.google.com" target="_blank" class="contact-link">Zobacz na mapie</a>
+                </div>
+
+                <!-- Hours -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Godziny Otwarcia</h3>
+                    <div class="hours-list">
+                        <div class="hours-row"><span>Pn - Czw</span> <span>12:00 - 22:00</span></div>
+                        <div class="hours-row"><span>Pt - Sob</span> <span>12:00 - 00:00</span></div>
+                        <div class="hours-row"><span>Niedziela</span> <span>12:00 - 22:00</span></div>
+                    </div>
+                </div>
+
+                <!-- Phone/Email -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.27-2.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Rezerwacje</h3>
+                    <p class="contact-accent">+48 570 024 738</p>
+                    <p>kontakt@broadway-rest.pl</p>
+                    <div class="social-icons" style="margin-top: 1.5rem;">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Restauracja BROADWAY. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }</script>
+</body>
+
+</html>
